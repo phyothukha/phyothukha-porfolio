@@ -1,14 +1,17 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Banner from "@/sections/Banner";
+import Service from "@/sections/service";
 
 export default function Home() {
   return (
-    <div className=" w-screen">
+    <main>
       <Header />
-      <main className=" h-screen">
-        <h1>Hello</h1>
+      <main className="">
+        <div className=" h-20 "></div>
+        <Banner />
       </main>
-      <Footer />
-    </div>
+      {/* <Footer /> */}
+    </main>
   );
 }
