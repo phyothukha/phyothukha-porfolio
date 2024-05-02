@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,300;0,400;1,500&family=Roboto:wght@300;400;500;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,25 +8,43 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --bg-color: #080808;
+  --second-bg-color: #131313;
+  --text-color: #ffffff;
+  --main-color: #00ffee;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --bg-color: #ffffff;
+    --second-bg-color: #131313;
+    --text-color: #080808;
+    --main-color: #00ffee;
   }
+} */
+* {
+  text-decoration: none;
+  /* border: none; */
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text-color);
+  background: var(--bg-color);
 }
+
+.nav-ani {
+  @apply relative md:hover:text-secondary duration-75 before:bg-primary before:absolute before:duration-700 hover:before:bg-secondary hover:before:top-6 before:top-4 before:w-full hover:before:h-[2px];
+}
+/* .nav-ani::before {
+  content: "";
+  @apply bg-primary absolute bottom-0 w-full h-[2px];
+} */
 
 @layer utilities {
   .text-balance {
