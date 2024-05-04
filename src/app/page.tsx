@@ -1,15 +1,18 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Banner from "@/sections/Banner";
-import Service from "@/sections/service";
+import Education from "@/sections/Education";
+import Service from "@/sections/Service";
 
 export default function Home() {
   return (
     <main>
       <Header />
       <main className="">
-        <div className=" h-20 "></div>
+        {/* <div className=" h-"></div> */}
         <Banner />
+        <Education />
+        <Service />
       </main>
       {/* <Footer /> */}
     </main>

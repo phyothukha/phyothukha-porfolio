@@ -47,8 +47,99 @@ body {
   hover:before:transform select-none cursor-pointer hover:before:scale-x-100;
 }
 
-@layer utilities {
+section h1 {
+  @apply text-center py-5 font-bold text-3xl  font-Poppins;
+}
+
+/* .timelime-items {
+  @apply max-w-6xl mx-auto  flex flex-wrap relative before:absolute w-[5px] h-full bg-secondary before:left-10;
+} */
+
+.timelime-items {
+  /* max-width: 1200px; */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timelime-items::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  /* left: calc(50%-1px); */
+  left: 50%;
+}
+
+.timelime-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timelime-item:last-child {
+  margin-bottom: 0;
+}
+
+.timelime-item:nth-child(odd) {
+  /* padding-right: calc(50%+30px); */
+  padding-right: 53%;
+  text-align: right;
+}
+
+.timelime-item:nth-child(even) {
+  padding-left: 53%;
+}
+/* .timelime-item {
+  @apply mb-[40px] w-full relative last:mb-0 pr-5;
+}
+.timelime-item:nth-child(odd) {
+  @apply pr-20;
+} */
+
+.timeline-dots {
+  height: 21px;
+  width: 21px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+  position: absolute;
+  left: 49.4%;
+  border-radius: 50%;
+  top: 10px;
+}
+.timeline-date {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin: 6px 5px 8px;
+}
+
+.timeline-content {
+  background-color: var(--bg-color);
+  border: 3px solid var(--main-color);
+  padding: 30px 50px;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px var(--main-color);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.timeline-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.timeline-content h3 {
+  @apply text-lg text-start  font-bold font-Poppins text-gray-400;
+}
+
+.timeline-content p {
+  @apply text-sm text-start font-medium font-Poppins text-gray-500;
+}
+
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

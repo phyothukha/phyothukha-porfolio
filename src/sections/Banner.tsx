@@ -4,17 +4,14 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <section
-      className=" h-screen relative overflow-hidden "
-      // className="relative mt-16 sm:mt-8 pt-8 lg:pt-0 px-4 sm:px-8 md:px-20 max-w-6xl sm:pb-24 min-h-[769px] mx-auto sm:flex sm:flex-col sm:justify-center sm:items-center lg:flex-row-reverse flex justify-between"
-    >
+    <section className=" h-screen relative overflow-hidden ">
       <span
         aria-hidden="true"
-        className="bg-text absolute bottom-10 rotate-12 text-[#1a1111]  text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center -z-20"
+        className="bg-text absolute bottom-10 rotate-12 text-[#0e0c0c]  text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center -z-20"
       >
         PASSIONATE PROGRAMMER FREELANCER FULL-STACK DEVELOPER
       </span>
-      <div className=" flex container max-w-6xl mx-auto items-center justify-between text-white">
+      <div className=" flex container max-w-6xl mx-auto items-center justify-between h-screen text-white">
         <article className=" w-1/2 self-center flex flex-col gap-5">
           <p className=" text-lg font-extrabold font-Roboto  text-opacity-70 ">
             My name{"'"}s{" "}
