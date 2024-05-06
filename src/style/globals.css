@@ -102,7 +102,9 @@ section h1 {
   height: 21px;
   width: 21px;
   background-color: var(--main-color);
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+  box-shadow:
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
   position: absolute;
   left: 49.4%;
   border-radius: 50%;
@@ -136,6 +138,65 @@ section h1 {
 
 .timeline-content p {
   @apply text-sm text-start font-medium font-Poppins text-gray-500;
+}
+
+.borderBox {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+  background-color: repeating-conic-gradient(
+    from var(--a),
+    #ff2770 0%,
+    #ff2770 5%,
+    transparent 5%,
+    transparent 40%,
+    #ff2770 50%
+  );
+  animation: rotate 4s linear infinite;
+  border-radius: 20px;
+}
+
+.borderBox::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    #00ffee 0%,
+    #00ffee 5%,
+    transparent 5%,
+    transparent 40%,
+    #00ffee 50%
+  );
+  animation: rotate 4s linear infinite -1s;
+  border-radius: 20px;
+}
+
+.borderBox::after {
+  content: "";
+  position: absolute;
+  /* inset: 8px; */
+  inset: 8px;
+  background: #2d2d39;
+  border-radius: 15px;
+  /* border: 8px solid #0d1117; */
+  border: 8px solid #0d1117;
+}
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes rotate {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
 }
 
 /* @layer utilities {

@@ -20,10 +20,19 @@ const Header = () => {
           <ul className=" flex gap-8 items-center w-full font-medium">
             <li>
               <Link
-                href={"#"}
+                href={"#me"}
                 className=" text-white transition duration-100 nav-ani "
               >
                 Me
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className=" text-white transition duration-100 nav-ani "
+                href={"#education"}
+              >
+                Education
               </Link>
             </li>
             <li>
@@ -32,14 +41,6 @@ const Header = () => {
                 className=" text-white transition duration-100 nav-ani "
               >
                 Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                className=" text-white transition duration-100 nav-ani "
-                href={"#education"}
-              >
-                Education
               </Link>
             </li>
             <li>

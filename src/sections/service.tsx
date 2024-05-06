@@ -11,7 +11,7 @@ const Service = () => {
           {[1, 2, 3, 4, 5, 6, 7, 8].map((dd, idx) => (
             <div
               key={idx}
-              className=" border flex flex-col h-56 justify-end gap-3 hover:bg-secondary hover:text-black transition duration-300 ease-in cursor-pointer  rounded-xl p-3 border-secondary "
+              className=" border-4 flex flex-col shadow-md shadow-secondary h-56 justify-end gap-3 hover:bg-secondary hover:text-black transition duration-300 ease-in cursor-pointer  rounded-xl p-3 border-secondary "
             >
               {/* <Image src={Git} alt="" width={100} height={100} /> */}
               <div className=" mx-auto ">
@@ -39,6 +39,11 @@ const Service = () => {
                 Numquam, deserunt?
               </p>
             </div>
+            // <div key={dd} className="borderBox  relative">
+            //   <div className=" absolute z-20 left-0 top-0 bottom-0 right-0 ">
+            //     <h2>Hello world</h2>
+            //   </div>
+            // </div>
           ))}
         </div>
       </div>
