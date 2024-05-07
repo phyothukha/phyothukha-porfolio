@@ -1,6 +1,7 @@
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Banner from "@/sections/Banner";
+import Contact from "@/sections/Contacts";
 import Education from "@/sections/Education";
 import Service from "@/sections/Service";
 import Project from "@/sections/projects";
@@ -10,13 +11,13 @@ export default function Home() {
     <main>
       <Header />
       <main className="">
-        {/* <div className=" h-"></div> */}
         <Banner />
         <Education />
         <Service />
         <Project />
+        <Contact />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }

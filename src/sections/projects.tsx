@@ -1,11 +1,56 @@
+import Image from "next/image";
 import React from "react";
+import ecommerence from "@/assets/ecommerence-page-1.webp";
+import bookauthor from "@/assets/Vite   React-page-1.webp";
 
 const Project = () => {
   return (
-    <section id="projects" className=" h-screen">
-      <h1>Projects</h1>
+    <section id="projects" className="  bg-[#171716] bg-opacity-90 py-5">
+      <div className=" container mx-auto max-w-6xl ">
+        <h1>Projects</h1>
+        <p className=" text-center">
+          This projects are my first time learning web devlopment did.
+        </p>
+        <div className=" grid grid-cols-2 gap-10 my-5  ">
+          <div>
+            <div className=" rounded-md overflow-hidden w-full h-96 relative ">
+              <Image
+                src={ecommerence}
+                alt="Ecommerence Project"
+                fill
+                className=" transition duration-1000 cursor-pointer hover:scale-110"
+              />
+            </div>
+            <h4 className=" font-bold text-lg text-secondary shadow-md">
+              Ecommerence Projects
+            </h4>
+            <p className=" font-bold text-sm tracking-wide   mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur reiciendis, voluptatum debitis tenetur tempore ipsam
+              architecto soluta porro veniam aspernatur!
+            </p>
+          </div>
 
-      <span className=" bg-[#3bc9db] text-[#006b21]">delivered</span>
+          <div>
+            <div className=" rounded-md overflow-hidden w-full h-96 relative ">
+              <Image
+                src={bookauthor}
+                alt="Ecommerence Project"
+                fill
+                className=" transition duration-1000 cursor-pointer hover:scale-110"
+              />
+            </div>
+            <h4 className=" font-bold text-lg text-secondary shadow-md">
+              Book Author Projects
+            </h4>
+            <p className=" font-bold text-sm tracking-wide mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur reiciendis, voluptatum debitis tenetur tempore ipsam
+              architecto soluta porro veniam aspernatur!
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

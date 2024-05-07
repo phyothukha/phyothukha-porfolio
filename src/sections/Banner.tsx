@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../assets/phyothukha-removebg-preview.png";
+import Profile from "@/assets/phyothukha-removebg-preview.png";
 import Image from "next/image";
 
 const Banner = () => {
@@ -45,7 +45,9 @@ const Banner = () => {
               height={500}
               src={Profile}
               className=" mt-20"
-              alt=""
+              alt="Phyo Thu Kha photo"
+              priority
+              placeholder="blur"
             />
           </div>
         </aside>
