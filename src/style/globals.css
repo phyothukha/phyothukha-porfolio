@@ -12,6 +12,9 @@
   --second-bg-color: #131313;
   --text-color: #ffffff;
   --main-color: #00ffee;
+  /* --main-color: #087e8b; */
+
+  /* --second-main-color: #087e8b; */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -34,15 +37,17 @@
 }
 
 body {
-  color: var(--text-color);
-  background: var(--bg-color);
+  /* color: var(--text-color);
+  background: var(--bg-color); */
+  /* @apply text-(var(--text-color)) bg-[var(--bg-color)]; */
+  @apply dark:text-[#ffffff] text-[#080808] dark:bg-[#080808] bg-[#ede5e5];
 }
 
 .nav-ani {
-  @apply relative hover:text-secondary duration-75 before:bg-primary before:absolute before:duration-700 before:w-full  before:top-4 hover:before:bg-secondary hover:before:top-[22px] hover:before:h-[2px];
+  @apply relative dark:hover:text-secondary hover:text-wtsecondary duration-75 before:bg-primary before:absolute before:duration-700 before:w-full  before:top-4 hover:before:bg-wtsecondary dark:before:bg-secondary hover:before:top-[22px] hover:before:h-[2px];
 }
 .btn {
-  @apply font-extrabold relative px-5 z-10 py-2 hover:text-white rounded-full overflow-hidden  
+  @apply font-extrabold relative px-5 z-10 py-2 dark:hover:text-white hover:text-black rounded-full overflow-hidden  
   before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:-z-10  before:transform before:transition before:scale-x-0 before:duration-300
   hover:before:transform select-none cursor-pointer hover:before:scale-x-100;
 }
@@ -57,20 +62,21 @@ section h1 {
 
 .timelime-items {
   /* max-width: 1200px; */
-  margin: auto;
+  /* margin: auto;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  position: relative; */
+  @apply m-auto flex flex-wrap relative before:absolute before:w-[5px] before:h-full before:bg-wtsecondary before:left-[50%] dark:before:bg-secondary;
 }
-.timelime-items::before {
-  content: "";
-  position: absolute;
+/* .timelime-items::before { */
+/* content: ""; */
+/* position: absolute;
   width: 5px;
   height: 100%;
-  background-color: var(--main-color);
-  /* left: calc(50%-1px); */
-  left: 50%;
-}
+  background-color: var(--main-color); */
+/* left: 50%; */
+/* @apply contents absolute w-[5px] h-full bg-wtsecondary dark:bg-secondary; */
+/* } */
 
 .timelime-item {
   margin-bottom: 40px;
@@ -99,7 +105,7 @@ section h1 {
 } */
 
 .timeline-dots {
-  height: 21px;
+  /* height: 21px;
   width: 21px;
   background-color: var(--main-color);
   box-shadow:
@@ -108,23 +114,29 @@ section h1 {
   position: absolute;
   left: 49.4%;
   border-radius: 50%;
-  top: 10px;
+  top: 10px; */
+  @apply h-[21px] w-[21px] bg-wtsecondary  dark:bg-secondary shadow-5xl dark:shadow-3xl absolute left-[49.4%] rounded-full top-[10px];
 }
 .timeline-date {
-  font-size: 20px;
+  /* font-size: 20px;
   font-weight: 800;
   color: white;
-  margin: 6px 5px 8px;
+  margin: 6px 5px 8px; */
+  @apply text-xl font-bold dark:text-white text-black mb-4 mt-2 mr-4;
 }
 
 .timeline-content {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color);
   border: 3px solid var(--main-color);
   padding: 30px 50px;
   border-radius: 2rem;
   box-shadow: 0 0 10px var(--main-color);
   cursor: pointer;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; */
+  @apply bg-darkary 
+  /* bg-[#222325] */
+  /* bg-[#00000] */
+   border-2 border-wtsecondary font-Poppins dark:border-secondary py-[30px] px-[50px] rounded-3xl  shadow-5xl dark:shadow-3xl cursor-pointer transition duration-500 ease-in-out;
 }
 
 .timeline-content:hover {
@@ -133,11 +145,11 @@ section h1 {
 }
 
 .timeline-content h3 {
-  @apply text-lg text-start  font-bold font-Poppins text-gray-400;
+  @apply text-lg text-start  font-bold font-Poppins dark:text-gray-400 text-white;
 }
 
 .timeline-content p {
-  @apply text-sm text-start font-medium font-Poppins text-gray-500;
+  @apply text-sm text-start font-medium font-Poppins dark:text-gray-500 text-gray-300;
 }
 
 .borderBox {

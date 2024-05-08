@@ -1,9 +1,24 @@
+// import { useTheme } from "next-themes";
+import Image from "next/image";
 import React from "react";
+import timlimebg from "@/assets/timelimebg.svg";
+import timelimebgwt from "@/assets/timelimebg-wt.svg";
 
 const Education = () => {
+  // const { theme } = useTheme();
+  // console.log(theme);
   return (
-    <section id="education" className="  bg-[#171716] bg-opacity-90 py-5">
-      <div className=" container mx-auto max-w-6xl ">
+    <section
+      id="education"
+      className="  dark:bg-[#171716] bg-[#c0c0c0] bg-opacity-90 py-5 relative overflow-hidden"
+    >
+      <div className=" absolute top-0 z-10  dark:inline-block hidden ">
+        <Image src={timlimebg} alt="" width={2000} height={300} />
+      </div>
+      <div className=" absolute top-0 z-10  dark:hidden inline-block ">
+        <Image src={timelimebgwt} alt="" width={2000} height={300} />
+      </div>
+      <div className=" container mx-auto max-w-6xl relative z-30 ">
         <h1>Education</h1>
         <div className="timelime-items ">
           <div className=" timelime-item">

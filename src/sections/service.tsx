@@ -1,17 +1,20 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
-import Git from "@/assets/brand-github.svg";
+// import Git from "@/assets/brand-github.svg";
 
 const Service = () => {
   return (
-    <section id="services" className="  bg-[#0e0e0e] bg-opacity-90 py-5">
+    <section
+      id="services"
+      className="  dark:bg-[#0e0e0e] bg-gray-200 bg-opacity-90 py-5"
+    >
       <div className=" container max-w-6xl mx-auto">
         <h1>Services</h1>
         <div className=" grid grid-cols-4 gap-10 my-5">
           {[1, 2, 3, 4, 5, 6, 7, 8].map((dd, idx) => (
             <div
               key={idx}
-              className=" border-4 flex flex-col shadow-md shadow-secondary h-56 justify-end gap-3 hover:bg-secondary hover:text-black transition duration-300 ease-in cursor-pointer  rounded-xl p-3 border-secondary "
+              className=" border-4 flex flex-col shadow-md shadow-wtsecondary dark:shadow-secondary h-56 justify-end gap-3 hover:bg-wtsecondary dark:hover:bg-secondary hover:text-black transition duration-300 ease-in cursor-pointer  rounded-xl p-3 dark:border-secondary  border-wtsecondary"
             >
               <div className=" mx-auto ">
                 <svg
@@ -21,9 +24,9 @@ const Service = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />

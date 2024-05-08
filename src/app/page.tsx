@@ -6,6 +6,8 @@ import Education from "@/sections/Education";
 import Service from "@/sections/Service";
 import Project from "@/sections/projects";
 
+//https://sinantokmak.framer.website/
+
 export default function Home() {
   return (
     <main>
