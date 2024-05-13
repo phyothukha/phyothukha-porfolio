@@ -1,6 +1,7 @@
 import React from "react";
 import phyothukha from "@/assets/phyothukha-removebg-preview.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -16,7 +17,6 @@ const Banner = () => {
           <p className=" text-lg font-extrabold font-Roboto  text-opacity-70 ">
             My name{"'"}s{" "}
             <span className=" dark:text-secondary text-wtsecondary text-xl font-Poppins">
-              {" "}
               Phyo Thu Kha
             </span>
           </p>
@@ -32,9 +32,12 @@ const Banner = () => {
             reprehenderit sint laboriosam neque maiores consequuntur voluptas
           </p>
           <div className=" flex gap-3">
-            <button className=" btn bg-wtsecondary dark:bg-secondary dark:text-black text-white before:bg-purple-500">
+            <Link
+              href={"#contact"}
+              className=" btn bg-wtsecondary dark:bg-secondary dark:text-black text-white before:bg-purple-500"
+            >
               Contact Me
-            </button>
+            </Link>
             <button className=" btn bg-transparent  border-wtsecondary dark:border-secondary text-wtsecondary dark:text-secondary border-2 dark:before:bg-secondary before:bg-wtsecondary">
               Download CV
             </button>

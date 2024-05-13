@@ -4,7 +4,7 @@ import Banner from "@/sections/Banner";
 import Contact from "@/sections/Contacts";
 import Education from "@/sections/Education";
 import Service from "@/sections/Service";
-import Project from "@/sections/projects";
+import Project from "@/sections/Projects";
 
 //https://sinantokmak.framer.website/
 
@@ -19,6 +19,7 @@ export default function Home() {
         <Project />
         <Contact />
       </main>
+      {/* <hr /> */}
       <Footer />
     </main>
   );

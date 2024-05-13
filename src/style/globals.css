@@ -12,25 +12,10 @@
   --second-bg-color: #131313;
   --text-color: #ffffff;
   --main-color: #00ffee;
-  /* --main-color: #087e8b; */
-
-  /* --second-main-color: #087e8b; */
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    --bg-color: #ffffff;
-    --second-bg-color: #131313;
-    --text-color: #080808;
-    --main-color: #00ffee;
-  }
-} */
 * {
   text-decoration: none;
-  /* border: none; */
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
@@ -47,13 +32,13 @@ body {
   @apply relative dark:hover:text-secondary hover:text-wtsecondary duration-75 before:bg-primary before:absolute before:duration-700 before:w-full  before:top-4 hover:before:bg-wtsecondary dark:before:bg-secondary hover:before:top-[22px] hover:before:h-[2px];
 }
 .btn {
-  @apply font-extrabold relative px-5 z-10 py-2 dark:hover:text-white hover:text-black rounded-full overflow-hidden  
+  @apply font-extrabold relative px-5 z-10 py-2 dark:hover:text-white hover:text-black rounded-full  overflow-hidden  
   before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:-z-10  before:transform before:transition before:scale-x-0 before:duration-300
   hover:before:transform select-none cursor-pointer hover:before:scale-x-100;
 }
 
 section h1 {
-  @apply text-center py-5 font-bold text-3xl  font-Poppins;
+  @apply text-center py-5 font-bold text-3xl  relative font-Poppins dark:text-secondary text-wtsecondary before:absolute  before:w-48 before:bottom-1 before:h-[3px] before:left-[50%] before:transform before:translate-x-[-50%] before:bg-wtsecondary dark:before:bg-secondary;
 }
 
 /* .timelime-items {

@@ -21,18 +21,19 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        // secondary: "#00ffee",
         wtsecondary: "#087e8b",
-        // wtsecondary: "#8AAAE5",
-        // witary: "#080808",
         wtprimary: "#fff",
 
-        // dark theme color
+        // dark mode
         secondary: "#00ffee",
         darkary: "#080808",
         primary: "#ffffff",
       },
       boxShadow: {
+        small: "0 0 5px  var(--main-color)",
+        medium: "0 0 15px var(--main-color)",
+        wtsmall: "0 0 5px #8AAAE5",
+        wtmedium: "0 0 15px #8AAAE5",
         "3xl": "0 0 25px var(--main-color)",
         "4xl":
           "0 0 10px var(--main-color), 0 0 20px var(--main-color),0 0 50px var(--main-color)",

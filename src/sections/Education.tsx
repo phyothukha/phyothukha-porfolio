@@ -1,16 +1,13 @@
-// import { useTheme } from "next-themes";
 import Image from "next/image";
 import React from "react";
 import timlimebg from "@/assets/timelimebg.svg";
 import timelimebgwt from "@/assets/timelimebg-wt.svg";
 
 const Education = () => {
-  // const { theme } = useTheme();
-  // console.log(theme);
   return (
     <section
       id="education"
-      className="  dark:bg-[#171716] bg-[#c0c0c0] bg-opacity-90 py-5 relative overflow-hidden"
+      className="  dark:bg-[#171716] bg-[#efecec] bg-opacity-90 py-5 relative overflow-hidden"
     >
       <div className=" absolute top-0 z-10  dark:inline-block hidden ">
         <Image src={timlimebg} alt="" width={2000} height={300} />
@@ -20,7 +17,7 @@ const Education = () => {
       </div>
       <div className=" container mx-auto max-w-6xl relative z-30 ">
         <h1>Education</h1>
-        <div className="timelime-items ">
+        <div className="timelime-items pt-10 ">
           <div className=" timelime-item">
             <div className=" timeline-dots"></div>
             <div className=" timeline-date">2021</div>

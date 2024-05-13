@@ -1,6 +1,4 @@
-// import Image from "next/image";
 import React from "react";
-// import Git from "@/assets/brand-github.svg";
 
 const Service = () => {
   return (
@@ -11,7 +9,7 @@ const Service = () => {
       <div className=" container max-w-6xl mx-auto">
         <h1>Services</h1>
         <div className=" grid grid-cols-4 gap-10 my-5">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((dd, idx) => (
+          {[...new Array(8)].map((dd, idx) => (
             <div
               key={idx}
               className=" border-4 flex flex-col shadow-md shadow-wtsecondary dark:shadow-secondary h-56 justify-end gap-3 hover:bg-wtsecondary dark:hover:bg-secondary hover:text-black transition duration-300 ease-in cursor-pointer  rounded-xl p-3 dark:border-secondary  border-wtsecondary"
