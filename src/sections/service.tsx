@@ -6,9 +6,9 @@ const Service = () => {
       id="services"
       className="  dark:bg-[#0e0e0e] bg-gray-200 bg-opacity-90 py-5"
     >
-      <div className=" container max-w-6xl mx-auto">
+      <div className=" container max-w-6xl mx-auto lg:px-0 px-10">
         <h1>Services</h1>
-        <div className=" grid grid-cols-4 gap-10 my-5">
+        <div className=" grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 my-5">
           {[...new Array(8)].map((dd, idx) => (
             <div
               key={idx}

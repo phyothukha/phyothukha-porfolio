@@ -5,7 +5,6 @@ import Contact from "@/sections/Contacts";
 import Education from "@/sections/Education";
 import Service from "@/sections/Service";
 import Project from "@/sections/Projects";
-// import { useEffect, useState } from "react";
 
 //https://sinantokmak.framer.website/
 

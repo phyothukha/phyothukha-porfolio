@@ -5,15 +5,15 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <section id="#me" className=" h-screen relative overflow-hidden ">
+    <section id="#me" className="  relative overflow-hidden ">
       <span
         aria-hidden="true"
-        className="bg-text absolute bottom-10 rotate-12 dark:text-[#0e0c0c] text-[#dfdbdbb4]  text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center -z-20"
+        className="bg-text absolute md:bottom-10 rotate-12 dark:text-[#0e0c0c] text-[#dfdbdbb4]  text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center -z-20"
       >
         PASSIONATE PROGRAMMER FREELANCER FULL-STACK DEVELOPER
       </span>
-      <div className=" flex font-Roboto container max-w-6xl mx-auto items-center justify-between h-screen ">
-        <article className=" w-1/2 self-center flex flex-col gap-5">
+      <div className=" flex font-Roboto container max-w-6xl mx-auto items-center lg:justify-between justify-center  flex-wrap-reverse  h-screen ">
+        <article className=" lg:w-1/2 self-center flex flex-col gap-5 lg:text-start text-center">
           <p className=" text-lg font-extrabold font-Roboto  text-opacity-70 ">
             My name{"'"}s{" "}
             <span className=" dark:text-secondary text-wtsecondary text-xl font-Poppins">
@@ -43,18 +43,16 @@ const Banner = () => {
             </button>
           </div>
         </article>
-        <aside>
-          <div className=" dark:bg-secondary bg-wtsecondary bg-opacity-70 w-[500px] h-[500px] rounded-full relative transition ease-in-out duration-500 cursor-pointer overflow-hidden dark:shadow-3xl shadow-5xl hover:shadow-6xl dark:hover:shadow-4xl ">
-            <div className=" absolute -bottom-50 "></div>
-            <Image
-              width={500}
-              height={500}
-              src={phyothukha}
-              className=" mt-20"
-              alt="Phyo Thu Kha photo"
-              priority
-            />
-          </div>
+        <aside className=" dark:bg-secondary bg-wtsecondary bg-opacity-70 w-[500px] h-[500px] rounded-full  transition ease-in-out duration-500 cursor-pointer overflow-hidden dark:shadow-3xl shadow-5xl hover:shadow-6xl dark:hover:shadow-4xl ">
+          <div className=" absolute -bottom-50 "></div>
+          <Image
+            width={500}
+            height={500}
+            src={phyothukha}
+            className=" mt-20"
+            alt="Phyo Thu Kha photo"
+            priority
+          />
         </aside>
       </div>
       {/* <div

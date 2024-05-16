@@ -47,22 +47,8 @@ section h1 {
 } */
 
 .timelime-items {
-  /* max-width: 1200px; */
-  /* margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative; */
   @apply m-auto flex flex-wrap relative before:absolute before:w-[5px] before:h-full before:bg-wtsecondary before:left-[50%] dark:before:bg-secondary;
 }
-/* .timelime-items::before { */
-/* content: ""; */
-/* position: absolute;
-  width: 5px;
-  height: 100%;
-  background-color: var(--main-color); */
-/* left: 50%; */
-/* @apply contents absolute w-[5px] h-full bg-wtsecondary dark:bg-secondary; */
-/* } */
 
 .timelime-item {
   margin-bottom: 40px;
@@ -83,45 +69,17 @@ section h1 {
 .timelime-item:nth-child(even) {
   padding-left: 53%;
 }
-/* .timelime-item {
-  @apply mb-[40px] w-full relative last:mb-0 pr-5;
-}
-.timelime-item:nth-child(odd) {
-  @apply pr-20;
-} */
 
 .timeline-dots {
-  /* height: 21px;
-  width: 21px;
-  background-color: var(--main-color);
-  box-shadow:
-    0 0 25px var(--main-color),
-    0 0 50px var(--main-color);
-  position: absolute;
-  left: 49.4%;
-  border-radius: 50%;
-  top: 10px; */
   @apply h-[21px] w-[21px] bg-wtsecondary  dark:bg-secondary shadow-5xl dark:shadow-3xl absolute left-[49.4%] rounded-full top-[10px];
 }
 .timeline-date {
-  /* font-size: 20px;
-  font-weight: 800;
-  color: white;
-  margin: 6px 5px 8px; */
   @apply text-xl font-bold dark:text-white text-black mb-4 mt-2 mr-4;
 }
 
 .timeline-content {
-  /* background-color: var(--bg-color);
-  border: 3px solid var(--main-color);
-  padding: 30px 50px;
-  border-radius: 2rem;
-  box-shadow: 0 0 10px var(--main-color);
-  cursor: pointer;
-  transition: 0.5s ease-in-out; */
   @apply bg-darkary 
-  /* bg-[#222325] */
-  /* bg-[#00000] */
+ 
    border-2 border-wtsecondary font-Poppins dark:border-secondary py-[30px] px-[50px] rounded-3xl  shadow-5xl dark:shadow-3xl cursor-pointer transition duration-500 ease-in-out;
 }
 
@@ -196,9 +154,3 @@ section h1 {
     --a: 360deg;
   }
 }
-
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */

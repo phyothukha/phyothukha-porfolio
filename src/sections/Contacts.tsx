@@ -5,9 +5,7 @@ const Contact = () => {
     <section id="contact" className="bg-[#00000] bg-opacity-90 py-5">
       <div className=" container mx-auto max-w-6xl">
         <div className=" text-center">
-          <h1 className=" ">Contact</h1>
-          <div className=" w-5 h-2 bg-red-400 "></div>
-
+          <h1>Contact</h1>
           <div className=" mx-auto text-center max-w-2xl text-sm mt-10   font-medium opacity-60 font-Inter">
             If you want to connect with me. You can connect with my email number
             or phone number Lorem ipsum dolor, sit amet consectetur adipisicing

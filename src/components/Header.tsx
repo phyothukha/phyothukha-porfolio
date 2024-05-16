@@ -1,5 +1,4 @@
 "use client";
-
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
@@ -185,7 +184,7 @@ const Header = () => {
           </nav>
         </div>
       </header>
-      <div className=" backdrop-filter backdrop-blur-[10px] md:hidden flex justify-around rounded-xl overflow-hidden dark:bg-[rgba(0,0,0,0.3)] left-[50%] right-[50%] transform translate-x-[-50%] fixed bottom-10  h-20  z-50 w-[80%]">
+      <div className=" backdrop-filter backdrop-blur-[10px] md:hidden flex justify-around rounded-xl overflow-hidden dark:bg-[rgba(0,0,0,0.3)] left-[50%] right-[50%] transform translate-x-[-50%] fixed bottom-10  h-20  z-50 w-[90%]">
         {navlinks.map((nav) => (
           <Link
             key={nav.url}
