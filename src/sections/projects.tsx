@@ -18,6 +18,7 @@ const Project = () => {
                 src={ecommerence}
                 alt="Ecommerence Project"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className=" transition duration-1000 cursor-pointer hover:scale-110"
               />
             </div>
@@ -36,6 +37,7 @@ const Project = () => {
                 src={bookauthor}
                 alt="Ecommerence Project"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className=" transition duration-1000 cursor-pointer hover:scale-110"
               />
             </div>
