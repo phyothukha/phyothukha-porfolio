@@ -12,7 +12,7 @@ const Service = () => {
           {[...new Array(8)].map((dd, idx) => (
             <div
               key={idx}
-              className=" border-4 flex flex-col shadow-md shadow-wtsecondary dark:shadow-secondary h-56 justify-end gap-3 hover:bg-wtsecondary dark:hover:bg-secondary hover:text-black transition duration-300 ease-in cursor-pointer  rounded-xl p-3 dark:border-secondary  border-wtsecondary"
+              className=" border-4 flex flex-col   h-56 justify-end gap-3 hover:bg-wtsecondary dark:hover:bg-secondary hover:text-black transition duration-300 ease-in cursor-pointer  rounded-xl p-3 dark:border-secondary  border-wtsecondary"
             >
               <div className=" mx-auto ">
                 <svg
@@ -31,10 +31,10 @@ const Service = () => {
                   <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                 </svg>
               </div>
-              <h3 className=" text-lg text-start  font-bold font-Roboto ">
+              <h3 className=" text-lg text-start  font-bold font-Fira ">
                 Git Version control
               </h3>
-              <p className="text-sm text-start font-medium font-Roboto">
+              <p className="text-sm text-start font-medium font-Ubuntu text-gray-400">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Numquam, deserunt?
               </p>

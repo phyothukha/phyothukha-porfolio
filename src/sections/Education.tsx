@@ -10,58 +10,45 @@ const Education = () => {
       className="  dark:bg-[#171716] bg-[#efecec] bg-opacity-90 py-5 relative overflow-hidden"
     >
       <div className=" absolute top-0 z-10  dark:inline-block hidden ">
-        <Image src={timlimebg} alt="" width={2000} height={300} />
+        <Image
+          src={timlimebg}
+          alt="timeline background"
+          style={{
+            maxWidth: "none",
+          }}
+          width={2000}
+          height={300}
+        />
       </div>
       <div className=" absolute top-0 z-10  dark:hidden inline-block ">
-        <Image src={timelimebgwt} alt="" width={2000} height={300} />
+        <Image
+          src={timelimebgwt}
+          alt="timeline white  background"
+          style={{
+            maxWidth: "none",
+          }}
+          width={2000}
+          height={300}
+        />
       </div>
-      <div className=" container mx-auto max-w-6xl relative z-30 ">
+      <div className=" container mx-auto max-w-6xl relative z-30 lg:px-0 px-10 ">
         <h1>Education</h1>
         <div className="timelime-items pt-10 ">
-          <div className=" timelime-item">
-            <div className=" timeline-dots"></div>
-            <div className=" timeline-date">2021</div>
-            <div className=" timeline-content">
-              <h3>University</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                exercitationem numquam molestiae, eum earum odio? Architecto
-              </p>
+          {timelineData.map((timeline, idx) => (
+            <div key={timeline.job} className=" timelime-item">
+              <div className=" absolute lg:left-[49.5%] z-20 -left-[6px] top-[10px]">
+                <span className="relative flex h-4 w-4  ">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-wtsecondary dark:bg-secondary opacity-75 "></span>
+                  <span className="relative inline-flex rounded-full h-4 w-4 bg-wtsecondary dark:bg-secondary"></span>
+                </span>
+              </div>
+              <div className=" timeline-date">{timeline.year}</div>
+              <div className=" timeline-content">
+                <h3 className=" font-Ubuntu">{timeline.job}</h3>
+                <p>{timeline.reason}</p>
+              </div>
             </div>
-          </div>
-          <div className=" timelime-item">
-            <div className=" timeline-dots"></div>
-            <div className=" timeline-date">2022</div>
-            <div className=" timeline-content">
-              <h3>MMSIT</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                exercitationem numquam molestiae, eum earum odio?
-              </p>
-            </div>
-          </div>
-          <div className=" timelime-item">
-            <div className=" timeline-dots"></div>
-            <div className=" timeline-date">2023</div>
-            <div className=" timeline-content">
-              <h3>Intern</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                exercitationem numquam molestiae, eum earum odio?
-              </p>
-            </div>
-          </div>
-          <div className=" timelime-item">
-            <div className=" timeline-dots"></div>
-            <div className=" timeline-date">2024</div>
-            <div className=" timeline-content">
-              <h3>Job</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-                exercitationem numquam molestiae, eum earum odio?
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -69,3 +56,30 @@ const Education = () => {
 };
 
 export default Education;
+
+const timelineData = [
+  {
+    year: 2021,
+    job: "University",
+    reason:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste exercitationem numquam molestiae, eum earum odio?",
+  },
+  {
+    year: 2022,
+    job: "MMSIT",
+    reason:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste exercitationem numquam molestiae, eum earum odio?",
+  },
+  {
+    year: 2023,
+    job: "Intern",
+    reason:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste exercitationem numquam molestiae, eum earum odio?",
+  },
+  {
+    year: 2024,
+    job: "Xsphere",
+    reason:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste exercitationem numquam molestiae, eum earum odio?",
+  },
+];

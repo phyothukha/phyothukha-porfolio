@@ -6,12 +6,12 @@ import bookauthor from "@/assets/Vite   React-page-1.webp";
 const Project = () => {
   return (
     <section id="projects" className="  bg-[#00000] bg-opacity-90 py-5">
-      <div className=" container mx-auto max-w-6xl ">
+      <div className=" container mx-auto max-w-6xl lg:px-0 px-10 ">
         <h1>Projects</h1>
-        <p className=" text-center">
+        <p className=" text-center font-Fira text-gray-400 mt-5">
           This projects are my first time learning web devlopment did.
         </p>
-        <div className=" grid grid-cols-2 gap-10 my-5  ">
+        <div className=" grid md:grid-cols-2 grid-cols-1  gap-10 my-5  ">
           <div>
             <div className=" rounded-md overflow-hidden w-full h-96 relative ">
               <Image
@@ -25,7 +25,7 @@ const Project = () => {
             <h4 className=" font-semibold text-lg font-Inter dark:text-gray-500">
               Ecommerence Projects
             </h4>
-            <p className=" font-medium font-Inter  text-sm dark:text-gray-300 tracking-wide mt-2">
+            <p className=" font-medium font-Inter  text-sm dark:text-gray-300  tracking-wide mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur reiciendis, voluptatum debitis tenetur tempore ipsam
               architecto soluta porro veniam aspernatur!

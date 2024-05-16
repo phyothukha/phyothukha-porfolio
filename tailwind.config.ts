@@ -13,6 +13,9 @@ const config: Config = {
       Roboto: ["Roboto", "sans-serif"],
       Poppins: ["Poppins", "sans-serif"],
       Inter: ["Inter", "sans-serif"],
+      Ubuntu: ["Ubuntu", "sans-serif"],
+      Fira: ["Fira Mono", "monospace"],
+      Poetsen: ["Poetsen One", "sans-serif"],
     },
     extend: {
       backgroundImage: {
