@@ -1,5 +1,5 @@
 import React from "react";
-import phyothukha from "@/assets/phyothukha-removebg-preview.png";
+import phyothukha from "@/assets/phyothukha.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,10 +32,9 @@ const Banner = () => {
               MERN STACK DEVELOPER
             </span>
           </h2>
-          <p className=" tracking-widest font-Roboto font-bold opacity-80 text-xs lg:text-sm font-Poetsen">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Exercitationem accusantium reiciendis architecto id perferendis eos
-            reprehenderit sint laboriosam neque maiores consequuntur voluptas
+          <p className=" tracking-widest font-Roboto font-bold opacity-80 text-xs lg:text-sm">
+            I help business grow by crafting amazing web experiences. If you’re
+            looking for a developer that likes to get stuff done,
           </p>
           <div className=" flex gap-3 justify-center lg:justify-start">
             <Link

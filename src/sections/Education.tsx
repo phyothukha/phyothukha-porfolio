@@ -36,7 +36,7 @@ const Education = () => {
         <div className="timelime-items pt-10 ">
           {timelineData.map((timeline, idx) => (
             <div key={timeline.job} className=" timelime-item">
-              <div className=" absolute lg:left-[49.5%] z-20 -left-[6px] top-[10px]">
+              <div className=" absolute lg:left-[49.5%] z-20 -left-[6px] top-[11px]">
                 <span className="relative flex h-4 w-4  ">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-wtsecondary dark:bg-secondary opacity-75 "></span>
                   <span className="relative inline-flex rounded-full h-4 w-4 bg-wtsecondary dark:bg-secondary"></span>

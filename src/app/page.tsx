@@ -3,8 +3,8 @@ import Header from "@/components/Header";
 import Banner from "@/sections/Banner";
 import Contact from "@/sections/Contacts";
 import Education from "@/sections/Education";
-import Service from "@/sections/Service";
-import Project from "@/sections/Projects";
+import Service from "@/sections/service";
+import Project from "@/sections/projects";
 import Link from "next/link";
 
 //https://sinantokmak.framer.website/

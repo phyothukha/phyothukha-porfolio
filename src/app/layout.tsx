@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Phyo Thu Kha",
   description: "Full stack Developer",
+  icons: {
+    icon: [{ url: "/phyothukha.png" }],
+  },
 };
 
 export default function RootLayout({
@@ -18,16 +21,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={"dark" ? "dark" : "light"}
-      style={{ colorScheme: "dark" ? "dark" : "light" }}
+      // className={"dark"??"light"}
+      // style={{colorScheme:"dark"??"light"}}
+
+      // className={theme}
+      // style={{colorScheme:theme}}
     >
       <body className={inter.className} suppressHydrationWarning>
-        <ThemeProvider
-          attribute="class"
-          // defaultTheme="da/rk"
-          // enableSystem
-          // disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
       </body>

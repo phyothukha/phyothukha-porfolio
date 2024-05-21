@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import ecommerence from "@/assets/ecommerence-page-1.webp";
-import bookauthor from "@/assets/Vite   React-page-1.webp";
+import ecommerence from "@/assets/ecommerence.webp";
+import bookauthor from "@/assets/bookauthor.webp";
 
 const Project = () => {
   return (
