@@ -25,7 +25,8 @@
 }
 
 body {
-  @apply dark:text-[#ffffff] text-[#080808] dark:bg-[#080808] bg-[#ede5e5];
+  @apply dark:text-[#ffffff] text-[#080808] dark:bg-[#080808] bg-[#eeeeee];
+  /* bg-[#eeeeee] dark:bg-black */
 }
 
 .nav-ani {

@@ -5,10 +5,13 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <section id="#me" className=" lg:h-screen  relative overflow-hidden ">
+    <section
+      id="#me"
+      className=" h-screen  bg-opacity-30  relative overflow-hidden "
+    >
       <p
         aria-hidden="true"
-        className="bg-text absolute bottom-0 rotate-12 dark:text-[#0e0c0c] text-[#dfdbdbb4]  text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center -z-20"
+        className="bg-text absolute bottom-0 rotate-12 dark:text-[#3534344c] text-[#e7e7e7b4]  text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center -z-20"
       >
         PASSIONATE PROGRAMMER FREELANCER FULL-STACK DEVELOPER
         <span className=" xl:inline-block hidden">

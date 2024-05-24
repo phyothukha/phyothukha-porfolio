@@ -1,34 +1,40 @@
 import Image from "next/image";
 import React from "react";
-import timlimebg from "@/assets/timelimebg.svg";
+import timelimebg from "@/assets/timelimebg.svg";
 import timelimebgwt from "@/assets/timelimebg-wt.svg";
 
 const Education = () => {
   return (
     <section
       id="education"
-      className="  dark:bg-[#171716] bg-[#efecec] bg-opacity-90 py-5 relative overflow-hidden"
+      className="  dark:bg-[#171716] bg-[#eeeeee] bg-opacity-90 py-5 relative overflow-hidden"
     >
       <div className=" absolute top-0 z-10  dark:inline-block hidden ">
         <Image
-          src={timlimebg}
+          src={timelimebg}
           alt="timeline background"
           style={{
             maxWidth: "none",
+            objectFit: "cover",
+            objectPosition: "bottom",
+            width: 2000,
+            height: "auto",
           }}
-          width={2000}
-          height={300}
+          priority
         />
       </div>
       <div className=" absolute top-0 z-10  dark:hidden inline-block ">
         <Image
           src={timelimebgwt}
-          alt="timeline white  background"
+          alt="timeline white background"
           style={{
             maxWidth: "none",
+            objectFit: "cover",
+            objectPosition: "bottom",
+            width: 2000,
+            height: "auto",
           }}
-          width={2000}
-          height={300}
+          priority
         />
       </div>
       <div className=" container mx-auto max-w-6xl relative z-30 lg:px-0 px-10 ">
