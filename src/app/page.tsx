@@ -1,10 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Banner from "@/sections/Banner";
-import Contact from "@/sections/Contacts";
-import Education from "@/sections/Education";
-import Service from "@/sections/service";
-import Project from "@/sections/projects";
+import ContactSection from "@/sections/ContactSection";
+import EducationSection from "@/sections/EducationSection";
+import HeroSection from "@/sections/HeroSection";
+import ProjectSection from "@/sections/ProjectSection";
+import ServiceSection from "@/sections/ServiceSection";
+import Link from "next/link";
 
 //https://sinantokmak.framer.website/
 
@@ -13,7 +14,7 @@ export default function Home() {
     <main>
       <Header />
       <main className="">
-        <Banner />
+        <HeroSection />
 
         {/* <div className=" h-40  relative">
           <div className=" absolute  left-[50%] transform translate-x-[-50%] animate-bounce">
@@ -41,10 +42,10 @@ export default function Home() {
           </div>
         </div> */}
 
-        <Education />
-        <Service />
-        <Project />
-        <Contact />
+        <EducationSection />
+        <ServiceSection />
+        <ProjectSection />
+        <ContactSection />
       </main>
       {/* <hr /> */}
       <Footer />

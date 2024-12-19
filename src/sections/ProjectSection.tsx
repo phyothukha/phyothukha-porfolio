@@ -3,7 +3,7 @@ import React from "react";
 import ecommerence from "@/assets/ecommerence.webp";
 import bookauthor from "@/assets/bookauthor.webp";
 
-const Project = () => {
+const ProjectSection = () => {
   return (
     <section id="projects" className="  bg-[#00000] bg-opacity-90 py-5">
       <div className=" container mx-auto max-w-6xl lg:px-0 px-10 ">
@@ -56,4 +56,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectSection;

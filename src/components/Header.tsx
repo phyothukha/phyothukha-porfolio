@@ -128,7 +128,7 @@ const Header = () => {
   }, [theme]);
   return (
     <>
-      <header className=" fixed top-0 py-5 backdrop-filter backdrop-blur-[10px] z-50 dark:bg-[rgba(0,0,0,0.3)] bg-[rgba(255,255,255,0.2)] left-0 w-full">
+      <header className=" fixed top-0 py-5 backdrop-filter backdrop-blur-[10px] z-50 dark:bg-[rgb(41,47,54,0.3)] bg-[rgba(255,255,255,0.2)] left-0 w-full">
         <div className=" container max-w-6xl flex mx-auto justify-between px-10 lg:px-0 ">
           <h1 className=" text-xl font-bold font-Poetsen dark:text-white text-black dark:hover:text-secondary hover:text-wtsecondary cursor-pointer transition duration-150 ease hover:scale-95 ">
             Phyo{" "}

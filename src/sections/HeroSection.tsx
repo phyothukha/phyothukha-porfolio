@@ -3,18 +3,18 @@ import phyothukha from "@/assets/phyothukha.png";
 import Image from "next/image";
 import Link from "next/link";
 
-const Banner = () => {
+const HeroSection = () => {
   return (
     <section id="#me" className="  relative mt-16 overflow-hidden ">
       <span
         aria-hidden="true"
-        className="bg-text absolute leading-tight top-36 rotate-12 text-gray-100 dark:text-[#4b4a4a31] text-[#e7e7e7b4] text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center -z-20"
+        className="bg-text absolute  top-36 rotate-12 text-gray-100 dark:text-[#4b4a4a31] text-[#e7e7e7b4] text-9xl scale-150 tracking-wide font-bold select-none pointer-events-none text-center -z-20"
       >
         PASSIONATE PROGRAMMER FREELANCER FULL-STACK DEVELOPER
       </span>
       <div className=" w-full flex flex-col items-center lg:justify-start justify-evenly">
-        <div className=" flex lg:flex-row items-center md:pb-40 pb-10  flex-col-reverse gap-5  font-Roboto container max-w-6xl mx-auto    lg:gap-5 justify-center  flex-wrap-reverse  min-h-[769px]  lg:px-0 px-10  ">
-          <article className=" lg:w-1/2 selection:bg-wtsecondary dark:selection:bg-secondary max-w-[500px]  flex flex-col gap-1 lg:gap-5 text-start ">
+        <div className=" flex md:flex-row items-center md:pb-40 pb-10  flex-col-reverse gap-5  font-Roboto container max-w-6xl mx-auto    lg:gap-5 justify-center  flex-wrap-reverse  min-h-[769px]  lg:px-0 px-10  ">
+          <article className=" md:w-1/2 selection:bg-wtsecondary dark:selection:bg-secondary max-w-[500px]  flex flex-col gap-1 lg:gap-5 text-start ">
             <p className=" lg:text-lg selection:text-primary text-sm font-normal font-Poetsen text-opacity-20 ">
               My name{"'"}s{" "}
             </p>
@@ -32,7 +32,7 @@ const Banner = () => {
               I am a Full-stack developer skilled in handling diverse projects,
               learning new technologies, and solving user problems effectively.
             </p>
-            <div className=" flex gap-3 justify-center lg:justify-start">
+            <div className=" flex gap-3 mt-5  justify-start">
               <Link
                 href={"#contact"}
                 className=" btn bg-wtsecondary dark:bg-secondary dark:text-black text-white before:bg-purple-500"
@@ -98,4 +98,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HeroSection;

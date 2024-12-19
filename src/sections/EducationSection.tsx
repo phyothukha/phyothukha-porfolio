@@ -3,11 +3,11 @@ import React from "react";
 import timelimebg from "@/assets/timelimebg.svg";
 import timelimebgwt from "@/assets/timelimebg-wt.svg";
 
-const Education = () => {
+const EducationSection = () => {
   return (
     <section
       id="education"
-      className="  dark:bg-[#171716] bg-[#eeeeee] bg-opacity-90 py-5 relative overflow-hidden"
+      className="  dark:bg-[#292f36] bg-[#eeeeee] bg-opacity-90 py-5 relative overflow-hidden"
     >
       <div className=" absolute top-0 z-10  dark:inline-block hidden ">
         <Image
@@ -39,8 +39,15 @@ const Education = () => {
       </div>
       <div className=" container mx-auto max-w-6xl relative z-30 lg:px-0 px-10 ">
         <h1>Education</h1>
+
+        {/* <div className=" w-full ">
+          <button className=" mt-10 lg:text-2xl text-xl font-Poetsen font-medium text-wtsecondary dark:text-secondary border-b-2  dark:border-secondary border-wtsecondary rounded-none  border-l-2 border-r-2 border-t-2 rounded-tl-[2.3rem]  lg:p-5 p-3 rounded-br-[2rem] ">
+            About Me
+          </button>
+        </div> */}
+
         <div className="timelime-items pt-10 ">
-          {timelineData.map((timeline, idx) => (
+          {timelineData.map((timeline) => (
             <div key={timeline.job} className=" timelime-item">
               <div className=" absolute lg:left-[49.5%] z-20 -left-[6px] top-[11px]">
                 <span className="relative flex h-4 w-4  ">
@@ -61,7 +68,7 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default EducationSection;
 
 const timelineData = [
   {

@@ -1,8 +1,8 @@
 import React from "react";
 
-const Service = () => {
+const ServiceSection = () => {
   return (
-    <section id="services" className="  dark:bg-[#0e0e0e] bg-[#eeeeee] py-5">
+    <section id="services" className="  dark:bg-[#292f36] bg-[#eeeeee] py-5">
       <div className=" container max-w-6xl mx-auto lg:px-0 px-10">
         <h1>Services</h1>
         <div className=" grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 my-5">
@@ -26,7 +26,7 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default ServiceSection;
 
 const services = [
   {

@@ -25,7 +25,7 @@
 }
 
 body {
-  @apply dark:text-[#ffffff] text-[#080808] dark:bg-[#080808] bg-[#eeeeee];
+  @apply dark:text-[#ffffff] text-[#080808] dark:bg-[#292f36] bg-[#eeeeee];
   /* bg-[#eeeeee] dark:bg-black */
 }
 
