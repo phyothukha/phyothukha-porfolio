@@ -18,7 +18,7 @@ const HeroSection = () => {
             <p className=" lg:text-lg selection:text-primary text-sm font-normal font-Poetsen text-opacity-20 ">
               My name{"'"}s{" "}
             </p>
-            <p className=" md:text-3xl text-xl dark:text-secondary dark:selection:text-darkary selection:text-primary text-wtsecondary lg:text-5xl font-Poetsen">
+            <p className=" md:text-3xl font-Fira text-xl dark:text-secondary dark:selection:text-darkary selection:text-primary text-wtsecondary lg:text-5xl ">
               <span className="  font-Fira"> {"<"}</span>Phyo Thu Kha
               <span className=" font-Fira">{"/>"}</span>
             </p>
@@ -28,7 +28,7 @@ const HeroSection = () => {
                 MERN STACK DEVELOPER
               </span>
             </h2>
-            <p className="  tracking-widest selection:text-primary dark:selection:text-darkary font-Poetsen font-bold text-xs lg:text-sm">
+            <p className="  font-normal tracking-widest selection:text-primary dark:selection:text-darkary font-Ubuntu  text-xs lg:text-sm">
               I am a Full-stack developer skilled in handling diverse projects,
               learning new technologies, and solving user problems effectively.
             </p>

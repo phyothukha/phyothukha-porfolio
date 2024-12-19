@@ -29,7 +29,7 @@ const config: Config = {
 
         // dark mode
         secondary: "#00ffee",
-        darkary: "#080808",
+        darkary: "#292f36",
         primary: "#ffffff",
       },
       boxShadow: {
