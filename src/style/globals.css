@@ -37,7 +37,7 @@ body {
   @apply md:hover:text-wtsecondary md:dark:text-secondary duration-75;
 }
 .btn {
-  @apply font-extrabold font-Roboto relative lg:px-5 px-3 py-1 z-10 lg:pt-2 lg:text-sm text-xs dark:hover:text-white hover:text-black rounded-full  overflow-hidden  
+  @apply font-extrabold font-Roboto relative lg:px-5 px-3 py-1 z-10  lg:text-sm text-xs dark:hover:text-white hover:text-black rounded-full  overflow-hidden  
   before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:-z-10  before:transform before:transition before:scale-x-0 before:duration-300
   hover:before:transform select-none cursor-pointer hover:before:scale-x-100;
 }
