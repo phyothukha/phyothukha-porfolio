@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import timelimebg from "@/assets/timelimebg.svg";
 import timelimebgwt from "@/assets/timelimebg-wt.svg";
-import phyothukha from "@/assets/image.png";
+import about from "@/assets/about.jpg";
 
 const EducationSection = () => {
   return (
@@ -75,14 +75,13 @@ const EducationSection = () => {
               </div>
             </aside>
             <div className=" lg:w-1/3  self-stretch">
-              <div className="  overflow-hidden w-full h-full bg-primary border-2 border-wtsecondary  dark:border-secondary rounded-xl   cursor-pointer transition duration-500 ease-in-out">
+              <div className="  overflow-hidden h-full w-full bg-primary border-2 border-wtsecondary  dark:border-secondary rounded-xl   cursor-pointer transition duration-500 ease-in-out">
                 <Image
-                  // src={phyothukha}
-                  src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8amF2YSUyMGNvZGV8ZW58MHx8MHx8fDA%3D"
-                  alt=""
-                  width={700}
-                  className=" mx-auto object-contain h-full "
-                  height={800}
+                  src={about}
+                  alt="about me"
+                  width={800}
+                  className=" mx-auto object-cover "
+                  height={500}
                 />
               </div>
               {/* </aside> */}

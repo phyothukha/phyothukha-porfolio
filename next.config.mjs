@@ -14,10 +14,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "i.pinimg.com",
       },
-      {
-        protocol: "https",
-        hostname: "lh7-rt.googleusercontent.com",
-      },
+
       {
         protocol: "https",
         hostname: "img.freepik.com",
