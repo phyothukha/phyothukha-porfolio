@@ -84,7 +84,6 @@ const EducationSection = () => {
                   height={500}
                 />
               </div>
-              {/* </aside> */}
             </div>
           </div>
         </div>
@@ -94,30 +93,3 @@ const EducationSection = () => {
 };
 
 export default EducationSection;
-
-const timelineData = [
-  {
-    year: 2021,
-    job: "University",
-    reason:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste exercitationem numquam molestiae, eum earum odio?",
-  },
-  {
-    year: 2022,
-    job: "MMSIT",
-    reason:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste exercitationem numquam molestiae, eum earum odio?",
-  },
-  {
-    year: 2023,
-    job: "Intern",
-    reason:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste exercitationem numquam molestiae, eum earum odio?",
-  },
-  {
-    year: 2024,
-    job: "Xsphere",
-    reason:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste exercitationem numquam molestiae, eum earum odio?",
-  },
-];
