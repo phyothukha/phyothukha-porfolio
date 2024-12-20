@@ -51,7 +51,7 @@ const HeroSection = () => {
             <div className=" absolute -bottom-50 "></div>
             <Image
               src={phyothukha}
-              className=" mt-20 mx-auto lg:w-[400px] w-[300px] h-[300px] lg:h-[400px]"
+              className=" mt-20 select-none object-contain mx-auto lg:w-[400px] w-[250px] h-[250px] lg:h-[400px]"
               alt="Phyo Thu Kha photo"
               priority
             />

@@ -8,14 +8,12 @@ import HeroSection from "@/sections/HeroSection";
 import ProjectSection from "@/sections/ProjectSection";
 import ServiceSection from "@/sections/ServiceSection";
 import gsap from "gsap";
-
 import { useEffect, useRef } from "react";
 
 //https://sinantokmak.framer.website/
 
 export default function Home() {
   const cursorRef = useRef(null);
-
   useEffect(() => {
     document.addEventListener("mousemove", (e) => {
       const mouseX = e.clientX;
@@ -31,33 +29,30 @@ export default function Home() {
     const hideCursor = () => {
       gsap.to(cursorRef.current, { opacity: 0 });
     };
-
     const showCursor = () => {
       gsap.to(cursorRef.current, { opacity: 1 });
     };
-
     document.addEventListener("mouseleave", hideCursor);
     document.addEventListener("mousedown", hideCursor);
     document.addEventListener("mouseup", showCursor);
   }, []);
 
+  console.log(cursorRef.current);
   return (
-    <main>
-      <Header />
-      <main className="">
-        <div
-          ref={cursorRef}
-          className="hidden lg:block w-8 h-8 opacity-0 pointer-events-none rounded-full border-2 border-wtsecondary dark:border-secondary z-[9999] fixed -translate-x-1/2 -translate-y-1/2"
-        />
+    <>
+      <div
+        ref={cursorRef}
+        className="hidden md:block w-12 h-12 opacity-0 pointer-events-none rounded-full border-2 border-wtsecondary  z-[9999] fixed -translate-x-1/2 -translate-y-1/2"
+      />
+      <main>
+        <Header />
         <HeroSection />
-
         <EducationSection />
         <ServiceSection />
         <ProjectSection />
         <ContactSection />
+        <Footer />
       </main>
-
-      <Footer />
-    </main>
+    </>
   );
 }

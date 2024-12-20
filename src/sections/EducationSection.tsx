@@ -41,9 +41,9 @@ const EducationSection = () => {
       <div className=" container mx-auto max-w-6xl relative z-30 lg:px-0 px-10 ">
         <h1>Education</h1>
 
-        <div className=" px-28 mt-20">
-          <div className=" flex  items-center gap-20">
-            <aside className=" w-2/3">
+        <div className=" lg:px-28 mt-20">
+          <div className=" flex flex-wrap  md:flex-nowrap   items-center  gap-20">
+            <aside className=" lg:w-2/3">
               <button className="  mb-10  bg-darkary lg:text-2xl text-xl w-56 font-medium text-primary dark:text-secondary border-b-2  dark:border-secondary border-wtsecondary rounded-none  border-l-2 border-r-2 border-t-2 rounded-tl-[2.3rem]  lg:p-5 p-3 rounded-br-[2rem] ">
                 About Me
               </button>
@@ -74,7 +74,7 @@ const EducationSection = () => {
                 </p>
               </div>
             </aside>
-            <div className=" w-1/3  self-stretch">
+            <div className=" lg:w-1/3  self-stretch">
               <div className="  overflow-hidden w-full h-full bg-primary border-2 border-wtsecondary  dark:border-secondary rounded-xl   cursor-pointer transition duration-500 ease-in-out">
                 <Image
                   // src={phyothukha}

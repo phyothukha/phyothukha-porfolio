@@ -129,11 +129,11 @@ const Header = () => {
   return (
     <>
       <header className=" fixed top-0 py-5 backdrop-filter backdrop-blur-[10px] z-50 dark:bg-[rgb(41,47,54,0.3)] bg-[rgba(255,255,255,0.2)] left-0 w-full">
-        <div className=" container max-w-6xl flex mx-auto justify-between px-10 lg:px-0 ">
+        <div className=" container max-w-6xl flex mx-auto justify-between px-10 lg:px-0 selection:bg-wtsecondary dark:selection:bg-secondary selection:text-primary dark:selection:text-darkary ">
           <h1 className=" text-xl font-bold font-Poetsen dark:text-white text-black dark:hover:text-secondary hover:text-wtsecondary cursor-pointer transition duration-150 ease hover:scale-95 ">
             Phyo{" "}
             <span
-              className=" dark:text-secondary  text-wtsecondary font-Poetsen"
+              className=" dark:text-secondary selection:shadow-none  text-wtsecondary font-Poetsen"
               style={{
                 textShadow: "0 0 2px var(--main-color)",
               }}
