@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "I help business grow by crafting amazing web experiences. If you’re looking for a developer that likes to get stuff done.",
   icons: {
-    icon: [{ url: "/phyothukha.png" }],
+    icon: [{ url: "/favicon.png" }],
   },
   keywords: ["Phyo Thu Kha", "phyothukha", "mern stack developer"],
   openGraph: {

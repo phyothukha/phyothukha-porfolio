@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "cloud.farytaxi.com",
+        hostname: "cdn-icons-png.freepik.com",
       },
       {
         protocol: "https",

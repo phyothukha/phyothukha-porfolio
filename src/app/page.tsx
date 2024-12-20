@@ -37,7 +37,6 @@ export default function Home() {
     document.addEventListener("mouseup", showCursor);
   }, []);
 
-  console.log(cursorRef.current);
   return (
     <>
       <div

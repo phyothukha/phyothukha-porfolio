@@ -22,6 +22,9 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.0.0(react@18.0.0)
+      swiper:
+        specifier: ^11.1.15
+        version: 11.1.15
     devDependencies:
       "@types/node":
         specifier: ^20
@@ -2640,6 +2643,13 @@ packages:
       }
     engines: { node: ">= 0.4" }
 
+  swiper@11.1.15:
+    resolution:
+      {
+        integrity: sha512-IzWeU34WwC7gbhjKsjkImTuCRf+lRbO6cnxMGs88iVNKDwV+xQpBCJxZ4bNH6gSrIbbyVJ1kuGzo3JTtz//CBw==,
+      }
+    engines: { node: ">= 4.7.0" }
+
   tailwindcss@3.3.0:
     resolution:
       {
@@ -4512,6 +4522,8 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  swiper@11.1.15: {}
 
   tailwindcss@3.3.0(postcss@8.0.0):
     dependencies:
