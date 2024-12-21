@@ -30,7 +30,7 @@ const CursorSection = () => {
   return (
     <div
       ref={cursorRef}
-      className="hidden lg:block w-6 h-6 opacity-0 pointer-events-none rounded-full border-2 border-accentColor dark:border-accentColor z-[9999] fixed -top-3 -left-3"
+      className="hidden lg:block w-6 h-6 opacity-0 pointer-events-none rounded-full border-2 border-wtsecondary  z-[9999] fixed -top-3 -left-3"
     />
   );
 };
