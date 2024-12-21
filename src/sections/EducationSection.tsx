@@ -2,13 +2,14 @@ import Image from "next/image";
 import React from "react";
 import timelimebg from "@/assets/timelimebg.svg";
 import timelimebgwt from "@/assets/timelimebg-wt.svg";
-import about from "@/assets/about.jpg";
+// import about from "@/assets/about.jpg";
+import about from "@/assets/bb.jpg";
 
 const EducationSection = () => {
   return (
     <section
       id="education"
-      className="  dark:bg-[#292f36] min-h-[769px] bg-[#eeeeee] bg-opacity-90 py-5 relative overflow-hidden"
+      className="  dark:bg-[#292f36]  bg-[#eeeeee] bg-opacity-90 pb-20 relative overflow-hidden"
     >
       <div className=" absolute top-0 z-10  dark:inline-block hidden ">
         <Image
@@ -38,11 +39,11 @@ const EducationSection = () => {
           priority
         />
       </div>
-      <div className=" container mx-auto max-w-6xl relative z-30 lg:px-0 px-10 ">
+      <div className=" container mx-auto max-w-7xl relative z-30 lg:px-0 px-10 ">
         <h1>Education</h1>
 
         <div className=" lg:px-28 mt-20">
-          <div className=" flex flex-wrap  md:flex-nowrap   items-center  gap-20">
+          <div className=" flex flex-wrap md:flex-row flex-col-reverse  md:flex-nowrap md:justify-start justify-center  items-center  gap-20">
             <aside className=" lg:w-2/3">
               <button className="  mb-10  bg-darkary lg:text-2xl text-xl w-56 font-medium text-primary dark:text-secondary border-b-2  dark:border-secondary border-wtsecondary rounded-none  border-l-2 border-r-2 border-t-2 rounded-tl-[2.3rem]  lg:p-5 p-3 rounded-br-[2rem] ">
                 About Me
@@ -74,17 +75,17 @@ const EducationSection = () => {
                 </p>
               </div>
             </aside>
-            <div className=" lg:w-1/3  self-stretch">
+            <aside className=" lg:w-1/3  md:self-end">
               <div className="  overflow-hidden h-full w-full bg-primary border-2 border-wtsecondary  dark:border-secondary rounded-xl   cursor-pointer transition duration-500 ease-in-out">
                 <Image
                   src={about}
                   alt="about me"
                   width={800}
-                  className=" mx-auto object-cover "
+                  className=" mx-auto object-cover object-bottom h-[400px] w-[500px] "
                   height={500}
                 />
               </div>
-            </div>
+            </aside>
           </div>
         </div>
       </div>

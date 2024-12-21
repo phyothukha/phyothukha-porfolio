@@ -26,7 +26,7 @@ const HeroSection = () => {
             <h2 className=" lg:text-3xl text-2xl font-bold lg:font-semibold font-Ubuntu selection:text-primary dark:selection:text-darkary ">
               I am a{" "}
               <span className=" dark:text-secondary  text-wtsecondary italic font-bold font-Fira">
-                MERN STACK DEVELOPER
+                FULL STACK DEVELOPER
               </span>
             </h2>
             <p className="  font-normal tracking-widest selection:text-primary dark:selection:text-darkary font-Ubuntu  text-xs lg:text-sm">
