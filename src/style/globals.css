@@ -43,7 +43,7 @@ body {
 }
 
 section h1 {
-  @apply text-center py-5 font-bold text-3xl  relative font-Fira dark:text-secondary text-wtsecondary before:absolute  before:w-48 before:bottom-1 before:h-[3px] before:left-[50%] before:transform before:translate-x-[-50%] before:bg-wtsecondary dark:before:bg-secondary;
+  @apply text-center py-5 font-bold text-3xl   relative font-Fira dark:text-secondary text-wtsecondary selection:text-primary dark:selection:text-darkary  before:absolute  before:w-48 before:bottom-1 before:h-[3px] before:left-[50%] before:transform before:translate-x-[-50%] before:bg-wtsecondary dark:before:bg-secondary;
 }
 
 .timelime-items {

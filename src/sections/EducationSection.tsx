@@ -15,13 +15,7 @@ const EducationSection = () => {
         <Image
           src={timelimebg}
           alt="timeline background"
-          style={{
-            maxWidth: "none",
-            objectFit: "cover",
-            objectPosition: "bottom",
-            width: 2000,
-            height: "auto",
-          }}
+          className=" max-w-none object-cover object-center w-[2000px] h-auto"
           priority
         />
       </div>
@@ -29,13 +23,14 @@ const EducationSection = () => {
         <Image
           src={timelimebgwt}
           alt="timeline white background"
-          style={{
-            maxWidth: "none",
-            objectFit: "cover",
-            objectPosition: "bottom",
-            width: 2000,
-            height: "auto",
-          }}
+          // style={{
+          //   maxWidth: "none",
+          //   objectFit: "cover",
+          //   objectPosition: "bottom",
+          //   width: 2000,
+          //   height: "auto",
+          // }}
+          className=" max-w-none object-cover object-center w-[2000px] h-auto"
           priority
         />
       </div>
@@ -81,7 +76,7 @@ const EducationSection = () => {
                   src={about}
                   alt="about me"
                   width={800}
-                  className=" mx-auto object-cover object-bottom h-[400px] w-[500px] "
+                  className=" mx-auto object-cover md:object-bottom h-[400px]  w-[400px] md:w-[500px] "
                   height={500}
                 />
               </div>

@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section id="#me" className="  relative mt-16 overflow-hidden ">
+    <section id="#me" className=" relative mt-14  overflow-hidden ">
       <span
         aria-hidden="true"
-        className="bg-text absolute top-28    right-0 rotate-12 text-gray-100 dark:text-[#4b4a4a31] text-[#e7e7e79f] text-9xl scale-150 tracking-widest font-bold select-none pointer-events-none text-center -z-20"
+        className="bg-text absolute top-40    right-10 rotate-12 text-gray-100 dark:text-[#4b4a4a31] text-[#e7e7e79f] text-9xl scale-150 tracking-widest font-bold select-none pointer-events-none text-center -z-20"
       >
         PASSIONATE PROGRAMMER FREELANCER FULL-STACK DEVELOPER
       </span>
@@ -52,6 +52,7 @@ const HeroSection = () => {
             <div className=" absolute -bottom-50 "></div>
             <Image
               src={phyothukha}
+              draggable={false}
               className=" mt-20 select-none object-contain mx-auto lg:w-[400px] w-[250px] h-[250px] lg:h-[400px]"
               alt="Phyo Thu Kha photo"
               priority

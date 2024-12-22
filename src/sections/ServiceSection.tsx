@@ -4,9 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { services, techstacks } from "@/data/services";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 const ServiceSection = () => {
   const cardRefs = useRef<HTMLDivElement[]>([]);
+  const lgScreen = useMediaQuery("(max-width:1024px) and (min-width:768px)");
+  const mdScreen = useMediaQuery("(max-width:768px) and (min-width:640px)");
+  const smScreen = useMediaQuery("(max-width:640px)");
+
+  const columns = smScreen ? 3 : mdScreen ? 4 : lgScreen ? 5 : 8;
 
   useEffect(() => {
     cardRefs.current.forEach((card) => {
@@ -63,8 +69,8 @@ const ServiceSection = () => {
       </div>
       <div className=" mt-20">
         <Swiper
-          spaceBetween={15}
-          slidesPerView={8}
+          spaceBetween={0}
+          slidesPerView={columns}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
@@ -73,14 +79,14 @@ const ServiceSection = () => {
           loop
           freeMode
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper h-[100px] before:absolute before:-left-[20px] before:z-10 before:h-full before:w-5 "
+          className="mySwiper h-24 before:absolute before:-left-[20px] before:z-10 before:h-full before:w-5 "
         >
           {techstacks.map(({ logo, name, id }) => (
             <SwiperSlide
               key={id}
               className="relative p-5 group overflow-hidden rounded-xl cursor-pointer "
             >
-              <div className=" flex gap-1 items-center">
+              <div className=" flex gap-1 h-full items-center">
                 {logo}
                 <p className=" font-normal text-sm">{name}</p>
               </div>
