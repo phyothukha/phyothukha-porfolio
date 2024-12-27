@@ -14,7 +14,6 @@ const HeroSection = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Text animations
       if (textRef.current) {
         gsap.fromTo(
           textRef?.current?.children,
@@ -62,7 +61,7 @@ const HeroSection = () => {
     >
       <span
         aria-hidden="true"
-        className="bg-text absolute top-40 right-10 rotate-12 text-gray-100 dark:text-[#4b4a4a31] text-[#e7e7e79f] text-9xl scale-150 tracking-widest font-bold select-none pointer-events-none text-center -z-20"
+        className="bg-text absolute top-24 right-24 rotate-12 text-gray-100 dark:text-[#4b4a4a31] text-[#e7e7e79f] text-9xl scale-150 tracking-widest font-bold select-none pointer-events-none text-center -z-20"
       >
         PASSIONATE PROGRAMMER FREELANCER FULL-STACK DEVELOPER
       </span>
@@ -73,7 +72,7 @@ const HeroSection = () => {
             ref={textRef}
             className="md:w-1/2 selection:bg-wtsecondary dark:selection:bg-secondary max-w-[500px] flex flex-col gap-1 lg:gap-5 text-start"
           >
-            <p className="lg:text-lg selection:text-primary text-sm font-normal font-Poetsen text-opacity-20">
+            <p className="lg:text-lg selection:text-primary dark:selection:text-darkary text-sm font-normal font-Poetsen text-opacity-20">
               My name{"'"}s{" "}
             </p>
             <p className="md:text-3xl font-Fira text-xl dark:text-secondary dark:selection:text-darkary selection:text-primary text-wtsecondary lg:text-5xl">
@@ -81,7 +80,7 @@ const HeroSection = () => {
               <span className="font-Fira">{"/>"}</span>
             </p>
             <h2 className="lg:text-3xl text-2xl font-bold lg:font-semibold font-Ubuntu selection:text-primary dark:selection:text-darkary">
-              I am a{" "}
+              I am a <br className="lg:hidden md:inline sm:hidden" />
               <span className="dark:text-secondary text-wtsecondary italic font-bold font-Fira">
                 FULL STACK DEVELOPER
               </span>

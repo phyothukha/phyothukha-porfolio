@@ -25,11 +25,13 @@ const config: Config = {
       },
       colors: {
         wtsecondary: "#087e8b",
-        wtprimary: "#fff",
+        wtprimary: "#fffff",
+        ltwtsecondary: "#087e8b1c",
 
         // dark mode
         secondary: "#00ffee",
         darkary: "#292f36",
+        ltseondary: "#00ffee23",
         primary: "#ffffff",
       },
       boxShadow: {

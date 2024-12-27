@@ -17,11 +17,14 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
       react:
-        specifier: ^18
+        specifier: ^18.0.0
         version: 18.0.0
       react-dom:
-        specifier: ^18
+        specifier: ^18.0.0
         version: 18.0.0(react@18.0.0)
+      react-rough-notation:
+        specifier: ^1.0.5
+        version: 1.0.5(react-dom@18.0.0(react@18.0.0))(react@18.0.0)
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
@@ -30,19 +33,19 @@ importers:
         version: 11.1.15
     devDependencies:
       "@types/node":
-        specifier: ^20
+        specifier: ^20.0.0
         version: 20.0.0
       "@types/react":
-        specifier: ^18
+        specifier: ^18.0.0
         version: 18.0.0
       "@types/react-dom":
-        specifier: ^18
+        specifier: ^18.0.0
         version: 18.0.0
       autoprefixer:
         specifier: ^10.0.1
         version: 10.0.1(postcss@8.0.0)
       eslint:
-        specifier: ^8
+        specifier: ^8.0.0
         version: 8.0.0
       eslint-config-next:
         specifier: 14.1.1
@@ -54,7 +57,7 @@ importers:
         specifier: ^15.2.2
         version: 15.2.2
       postcss:
-        specifier: ^8
+        specifier: ^8.0.0
         version: 8.0.0
       prettier:
         specifier: 3.2.5
@@ -63,7 +66,7 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0(postcss@8.0.0)
       typescript:
-        specifier: ^5
+        specifier: ^5.0.2
         version: 5.0.2
 
 packages:
@@ -791,10 +794,10 @@ packages:
       }
     engines: { node: ">= 6" }
 
-  caniuse-lite@1.0.30001593:
+  caniuse-lite@1.0.30001690:
     resolution:
       {
-        integrity: sha512-UWM1zlo3cZfkpBysd7AS+z+v007q9G1+fLTUU42rQnY6t2axoogPW/xol6T7juU5EUoOhML4WgBIdG+9yYqAjQ==,
+        integrity: sha512-5ExiE3qQN6oF8Clf8ifIDcMRCRE/dMGcETG/XGMD8/XiXm6HXQgQTh1yZYLXXpSOsEUlJm1Xr7kGULZTuGtP/w==,
       }
 
   chalk@4.1.2:
@@ -2482,6 +2485,15 @@ packages:
         integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==,
       }
 
+  react-rough-notation@1.0.5:
+    resolution:
+      {
+        integrity: sha512-TTDnw1Qn96PwitGsBsjNh4911+o26Vivj/dhHbsHHhN6lDgkQsFhv1X/eOnCjHA2EOyDE5JBQ1HEZ1yW8sCmKA==,
+      }
+    peerDependencies:
+      react: ^18.2.0
+      react-dom: ^18.2.0
+
   react@18.0.0:
     resolution:
       {
@@ -2582,6 +2594,12 @@ packages:
         integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==,
       }
     hasBin: true
+
+  rough-notation@0.5.1:
+    resolution:
+      {
+        integrity: sha512-ITHofTzm13cWFVfoGsh/4c/k2Mg8geKgBCwex71UZLnNuw403tCRjYPQ68jSAd37DMbZIePXPjDgY0XdZi9HPw==,
+      }
 
   run-parallel@1.2.0:
     resolution:
@@ -3466,7 +3484,7 @@ snapshots:
   autoprefixer@10.0.1(postcss@8.0.0):
     dependencies:
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001593
+      caniuse-lite: 1.0.30001690
       colorette: 1.4.0
       normalize-range: 0.1.2
       num2fraction: 1.2.2
@@ -3502,7 +3520,7 @@ snapshots:
 
   browserslist@4.23.0:
     dependencies:
-      caniuse-lite: 1.0.30001593
+      caniuse-lite: 1.0.30001690
       electron-to-chromium: 1.4.690
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -3523,7 +3541,7 @@ snapshots:
 
   camelcase-css@2.0.1: {}
 
-  caniuse-lite@1.0.30001593: {}
+  caniuse-lite@1.0.30001690: {}
 
   chalk@4.1.2:
     dependencies:
@@ -4410,7 +4428,7 @@ snapshots:
       "@next/env": 14.1.1
       "@swc/helpers": 0.5.2
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001593
+      caniuse-lite: 1.0.30001690
       graceful-fs: 4.2.11
       postcss: 8.4.31
       react: 18.0.0
@@ -4610,6 +4628,12 @@ snapshots:
 
   react-is@16.13.1: {}
 
+  react-rough-notation@1.0.5(react-dom@18.0.0(react@18.0.0))(react@18.0.0):
+    dependencies:
+      react: 18.0.0
+      react-dom: 18.0.0(react@18.0.0)
+      rough-notation: 0.5.1
+
   react@18.0.0:
     dependencies:
       loose-envify: 1.4.0
@@ -4671,6 +4695,8 @@ snapshots:
   rimraf@3.0.2:
     dependencies:
       glob: 7.2.3
+
+  rough-notation@0.5.1: {}
 
   run-parallel@1.2.0:
     dependencies:
