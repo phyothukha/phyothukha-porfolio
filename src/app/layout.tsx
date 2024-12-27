@@ -20,7 +20,8 @@ export const metadata: Metadata = {
     url: "https://phyothukha-porfolio.vercel.app",
     images: [
       {
-        url: "https://phyothukha-porfolio.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphyothukha.f8710533.png&w=1080&q=75",
+        // url: "https://phyothukha-porfolio.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphyothukha.f8710533.png&w=1080&q=75",
+        url: "https://phyothukha-porfolio.vercel.app/showcase.png",
         width: 800,
         height: 600,
         alt: "Description of the image for screen readers",
