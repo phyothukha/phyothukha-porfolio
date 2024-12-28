@@ -20,6 +20,7 @@ export const projects = [
       />
     ),
     liveUrl: "https://phyothukha-movie.vercel.app",
+    sourceCode: "https://github.com/phyothukha/movie-project",
     tags: ["react", "mantine"],
   },
   {
@@ -36,6 +37,8 @@ export const projects = [
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
+    liveUrl: "https://book-author-five.vercel.app",
+    sourceCode: "https://github.com/phyothukha/book-author",
     tags: ["react", "tailwind", "javascript"],
   },
   {
@@ -52,6 +55,8 @@ export const projects = [
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
+    liveUrl: "https://apple-clone-peach.vercel.app",
+    sourceCode: "https://github.com/phyothukha/apple-clone",
     tags: ["react", "tailwind", "typescript", "shadcn-ui", "framer-motion"],
   },
   {
@@ -68,6 +73,8 @@ export const projects = [
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
+    liveUrl: "https://phyothukha-snake-game.vercel.app",
+    sourceCode: "https://github.com/phyothukha/snake-game",
     tags: ["html", "css", "javascript"],
   },
 ];

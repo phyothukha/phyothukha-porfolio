@@ -15,15 +15,14 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <p className=" font-thin text-center mt-5">
+      <p className="  text-center mt-5">
         Design By{" "}
-        <Link href={"#me"}>
+        <Link href="/">
           <span className=" dark:text-secondary text-wtsecondary font-light font-Poetsen  cursor-pointer">
             Phyo Thu Kha
           </span>
         </Link>
       </p>
-      <div className=" lg:h-0 h-20"></div>
     </footer>
   );
 };

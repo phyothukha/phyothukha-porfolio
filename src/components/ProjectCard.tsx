@@ -10,6 +10,8 @@ type Props = {
     description: string;
     image: JSX.Element;
     tags: string[];
+    liveUrl: string;
+    sourceCode: string;
   };
 };
 
@@ -72,8 +74,8 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
             </h3>
             <div className="flex items-center space-x-5 sm:space-x-3 my-2 sm:my-0 mr-[0.1rem]">
               <a
-                // href={project.codeUrl}
-                // title={`See '${project.title}' on Github`}
+                href={project.sourceCode}
+                title={`See '${project.name}' on Github`}
                 target="_blank"
                 rel="noreferrer"
                 className="focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen mr-1 rounded-full"
@@ -92,8 +94,8 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
                 </svg>
               </a>
               <a
-                // href={project.liveUrl}
-                // title={`See live demo of '${project.title}'`}
+                href={project.liveUrl}
+                title={`See live demo of '${project.name}'`}
                 target="_blank"
                 rel="noreferrer"
                 className="focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen mr-8 rounded-full"

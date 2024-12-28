@@ -1,5 +1,6 @@
 "use client";
 import { navlinks } from "@/data/navLinks";
+import useActiveNav from "@/hooks/useActiveNav";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import React, { useEffect, useRef } from "react";
@@ -7,6 +8,7 @@ import React, { useEffect, useRef } from "react";
 const Header = () => {
   const { setTheme, theme } = useTheme();
   const themeBtnRef = useRef<HTMLButtonElement>(null);
+  const currentNav = useActiveNav("section");
 
   useEffect(() => {
     const themeBtn = themeBtnRef.current;
@@ -14,28 +16,35 @@ const Header = () => {
       themeBtn.ariaLabel = theme ?? "light";
     }
   }, [theme]);
+
   return (
     <>
       <header className=" fixed top-0 py-5 backdrop-filter backdrop-blur-[10px] z-50 dark:bg-[rgb(41,47,54,0.3)] bg-[rgba(255,255,255,0.2)] left-0 w-full">
         <div className=" container max-w-6xl flex mx-auto justify-between px-10 lg:px-0 selection:bg-wtsecondary dark:selection:bg-secondary selection:text-primary dark:selection:text-darkary ">
-          <h1 className=" text-xl font-bold font-Poetsen dark:text-white text-black dark:hover:text-secondary hover:text-wtsecondary cursor-pointer transition duration-150 ease hover:scale-95 ">
+          <Link
+            href="/"
+            className=" text-xl font-bold font-Poetsen dark:text-white text-black dark:hover:text-secondary hover:text-wtsecondary cursor-pointer transition duration-150 ease hover:scale-95 "
+          >
             Phyo{" "}
             <span
-              className=" dark:text-secondary selection:shadow-none  text-wtsecondary font-Poetsen"
+              className=" dark:text-secondary selection:shadow-none text-wtsecondary font-Poetsen"
               style={{
                 textShadow: "0 0 2px var(--main-color)",
               }}
             >
               Thu Kha
             </span>
-          </h1>
+          </Link>
           <nav>
             <ul className=" flex gap-8 items-center w-full font-medium">
               {navlinks.map((nav) => (
                 <li key={nav.url} className=" md:inline-block hidden">
                   <Link
                     href={nav.url}
-                    className=" dark:text-white text-black transition duration-100 nav-ani font-Poetsen font-light "
+                    className={`dark:text-white text-black transition duration-100 nav-ani font-Poetsen font-light ${
+                      currentNav === nav.url.substring(1) &&
+                      "text-wtsecondary dark:text-secondary font-semibold nav-ani"
+                    }`}
                   >
                     {nav.label}
                   </Link>
@@ -93,7 +102,10 @@ const Header = () => {
           <Link
             key={nav.url}
             href={nav.url}
-            className={`dark:text-white dark:hover:text-secondary  hover:text-wtsecondary transition duration-300 text-black text-xs    p-3 max-w-xl text-center flex flex-col items-center justify-center `}
+            className={`dark:text-white dark:hover:text-secondary  hover:text-wtsecondary transition duration-300 text-black text-xs p-3 max-w-xl text-center flex flex-col items-center justify-center ${
+              currentNav === nav.url.substring(1) &&
+              " text-wtsecondary dark:text-secondary font-semibold"
+            }`}
           >
             <p className=" text-center">{nav.icons}</p>
             <p>{nav.label}</p>
