@@ -41,9 +41,10 @@ const Header = () => {
                 <li key={nav.url} className=" md:inline-block hidden">
                   <Link
                     href={nav.url}
-                    className={`dark:text-white text-black transition duration-100 nav-ani font-Poetsen font-light ${
-                      currentNav === nav.url.substring(1) &&
-                      "text-wtsecondary dark:text-secondary font-semibold nav-ani"
+                    className={` text-black transition duration-100 nav-ani font-semibold font-Poppins   ${
+                      currentNav === nav.url.substring(1)
+                        ? "text-wtsecondary dark:text-secondary nav-ani"
+                        : "dark:text-white"
                     }`}
                   >
                     {nav.label}

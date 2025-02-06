@@ -69,7 +69,7 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
         </div>
         <div className="overflow-hidden">
           <div className="project-text flex items-center justify-between">
-            <h3 className=" text-wtsecondary dark:text-secondary text-lg my-1 font-Poetsen">
+            <h3 className=" text-wtsecondary dark:text-secondary text-lg my-1 font-Poetsen dark:selection:text-black  selection:text-white">
               {project.name}
             </h3>
             <div className="flex items-center space-x-5 sm:space-x-3 my-2 sm:my-0 mr-[0.1rem]">
@@ -78,7 +78,8 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
                 title={`See '${project.name}' on Github`}
                 target="_blank"
                 rel="noreferrer"
-                className="focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen mr-1 rounded-full"
+                // className="focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen mr-1 rounded-full"
+                className=" focus-visible:outline-secondary"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +120,7 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
           </div>
         </div>
         <div className="overflow-hidden">
-          <p className="project-desc font-medium text-sm font-Poetsen">
+          <p className="project-desc font-semibold font-Poppins text-sm text-gray-500    dark:selection:text-black  selection:text-white">
             {project.description.substring(0, 200)}...
           </p>
         </div>
@@ -131,8 +132,7 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
             <li
               key={tag}
               className={`project-tags mr-2 my-1
-               bg-ltwtsecondary text-wtsecondary dark:bg-ltseondary dark:text-secondary
-               
+               bg-ltwtsecondary text-wtsecondary dark:bg-ltseondary dark:text-secondary dark:selection:text-black  selection:text-white
                py-1 px-2 rounded`}
             >
               {tag}
