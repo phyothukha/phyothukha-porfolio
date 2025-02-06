@@ -18,8 +18,6 @@ type Props = {
 const ProjectCard: React.FC<Props> = ({ index, project }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  const even = index % 2 === 0 ? true : false;
-
   // Animations
   useEffect(() => {
     const q = gsap.utils.selector(sectionRef);
@@ -99,7 +97,7 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
                 title={`See live demo of '${project.name}'`}
                 target="_blank"
                 rel="noreferrer"
-                className="focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen mr-8 rounded-full"
+                // className="focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen mr-8 rounded-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +118,7 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
           </div>
         </div>
         <div className="overflow-hidden">
-          <p className="project-desc font-semibold font-Poppins text-sm text-gray-500    dark:selection:text-black  selection:text-white">
+          <p className="project-desc font-semibold font-Poppins text-sm text-gray-500  dark:text-gray-200   dark:selection:text-black  selection:text-white">
             {project.description.substring(0, 200)}...
           </p>
         </div>
