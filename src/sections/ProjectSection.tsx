@@ -44,7 +44,7 @@ const ProjectSection = () => {
     <section
       id="projects"
       ref={sectionRef}
-      className="bg-[#00000] bg-opacity-90 py-5"
+      className="bg-[#00000] bg-opacity-90 py-20"
     >
       <div className="container mx-auto max-w-5xl lg:px-0 px-10">
         <h1 ref={titleRef} className="text-center text-3xl font-bold">

@@ -19,13 +19,13 @@ const EducationSection = () => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         textRef.current,
-        { y: -100 },
+        { x: -200, opacity: 0.5 },
         {
           opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "elastic.inOut",
-          stagger: 0.2,
+          x: 0,
+          duration: 0.3,
+          ease: "back.in",
+          // stagger: 0.2,
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top center",
@@ -88,7 +88,7 @@ const EducationSection = () => {
     <section
       id="education"
       ref={sectionRef}
-      className="dark:bg-[#292f36] bg-[#eeeeee] bg-opacity-90 pb-20 relative overflow-hidden"
+      className="dark:bg-[#292f36] bg-[#eeeeee] bg-opacity-90 py-20 relative overflow-hidden"
     >
       <div className="absolute top-0 z-10 dark:inline-block hidden">
         <Image

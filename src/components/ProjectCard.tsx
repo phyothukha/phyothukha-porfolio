@@ -76,7 +76,6 @@ const ProjectCard: React.FC<Props> = ({ index, project }) => {
                 title={`See '${project.name}' on Github`}
                 target="_blank"
                 rel="noreferrer"
-                // className="focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen mr-1 rounded-full"
                 className=" focus-visible:outline-secondary"
               >
                 <svg

@@ -38,7 +38,7 @@ const ServiceSection = () => {
   return (
     <section
       id="services"
-      className="dark:bg-[#292f36] bg-[#eeeeee] py-5 h-auto"
+      className="dark:bg-[#292f36] bg-[#eeeeee] py-20 h-auto"
     >
       <div className="container max-w-6xl mx-auto lg:px-0 px-10">
         <h1>Services</h1>
